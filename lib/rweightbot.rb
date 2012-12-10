@@ -1,5 +1,5 @@
 require "rweightbot/version"
 
-module Rweightbot
+module RWeightbot
   # Your code goes here...
 end

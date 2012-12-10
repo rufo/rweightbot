@@ -1,3 +1,3 @@
-module Rweightbot
+module RWeightbot
   VERSION = "0.0.1"
 end

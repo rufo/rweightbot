@@ -5,7 +5,7 @@ require 'rweightbot/version'
 
 Gem::Specification.new do |gem|
   gem.name          = "rweightbot"
-  gem.version       = Rweightbot::VERSION
+  gem.version       = RWeightbot::VERSION
   gem.authors       = ["Rufo Sanchez"]
   gem.email         = ["rufo@rufosanchez.com"]
   gem.description   = %q{TODO: Write a gem description}
