@@ -1,9 +1,9 @@
 require "spec_helper"
 
-describe RWeightbot do
+describe RWeightbot::Account do
   let(:email) { CREDENTIALS["email"] }
   let(:password) { CREDENTIALS["password"] }
-  subject {RWeightbot.new(:email => email, :password => password)}
+  subject {RWeightbot::Account.new(:email => email, :password => password)}
 
   it "should accept a username and password upon initialization" do
     subject.email.should eq(email)
