@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe RWeightbot::Account do
+describe RWeightbot::Account, :vcr do
   let(:email) { CREDENTIALS["email"] }
   let(:password) { CREDENTIALS["password"] }
   subject {RWeightbot::Account.new(:email => email, :password => password)}

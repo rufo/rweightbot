@@ -14,6 +14,8 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency "mechanize", "~>2.5.1"
   gem.add_development_dependency "rspec", "~>2.12"
+  gem.add_development_dependency "vcr", "~>2.3.0"
+  gem.add_development_dependency "fakeweb", "~>1.3.0"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
