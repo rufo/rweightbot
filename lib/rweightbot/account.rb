@@ -1,4 +1,5 @@
 require "mechanize"
+require "csv"
 
 module RWeightbot
   class Account
@@ -15,6 +16,17 @@ module RWeightbot
 
     def csv
       mech.submit(export_form).body
+    end
+
+    def weighings
+      return @weighings if @weighings
+
+      @weighings = []
+      CSV.parse(csv, :headers => true, :return_headers => false, :col_sep => ", ") do |row|
+        @weighings << RWeightbot::Weighing.new(row)
+      end
+
+      @weighings
     end
 
     private

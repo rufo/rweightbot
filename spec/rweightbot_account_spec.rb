@@ -17,4 +17,9 @@ describe RWeightbot::Account do
   it "should be able to return a .csv of your data" do
     subject.csv.should match(/\,/)
   end
+
+  it "should be able to return an array of weighings" do
+    subject.weighings.count.should > 0
+    subject.weighings[0].class.should eq(RWeightbot::Weighing)
+  end
 end
