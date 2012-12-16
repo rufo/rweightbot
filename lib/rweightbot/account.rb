@@ -2,13 +2,21 @@ require "mechanize"
 require "csv"
 
 module RWeightbot
+  # @!attribute [rw] email
+  #   A weightbot.com email address.
+  #   @param [String]
+  #   @return [String]
+  # @!attribute [rw] password
+  #   A weightbot.com password.
+  #   @param [String]
+  #   @return [String]
   class Account
     attr_accessor :email, :password
 
     # Creates a new Account object. Note that it won't try to log in until you call one of the other public methods.
-    # @param [Hash] options Options for creating an account:
-    # @option options [String] :email The e-mail address for a registered account at weightbot.com
-    # @option options [String] :password The password for the same account
+    # @param [Hash] options A hash of attribute names - see the list of instance attributes for more info.
+    # @option options [String] :email See {#email}.
+    # @option options [String] :password See {#password}.
     def initialize(options = {})
       self.email = options[:email]
       self.password = options[:password]
