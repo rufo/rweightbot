@@ -6,5 +6,6 @@ rvm:
 before_script:
   - cp spec/weightbot_credentials_travis.yml spec/weightbot_credentials.yml
 env:
-  - RWEIGHTBOT_USERNAME=rufo@rufosanchez.com
-  - secure: "JTXVrbD5loChmbr7/YuAG0FFBKQmwQKVsYKDDBu/mlIePXBkzxo3GqRf7qPp\nZhoANBL5y6rswkGqeZA7MnvYXuf8v5+gh5JEyofAV4cUmLgB0EYFwUAqqhim\nROsWPzZBK+jK7P7CgQ1fgTaSlndt9z0SRmZkHRYUifmDojNhPFo="
+  global:
+    - RWEIGHTBOT_USERNAME=rufo@rufosanchez.com
+    - secure: "JTXVrbD5loChmbr7/YuAG0FFBKQmwQKVsYKDDBu/mlIePXBkzxo3GqRf7qPp\nZhoANBL5y6rswkGqeZA7MnvYXuf8v5+gh5JEyofAV4cUmLgB0EYFwUAqqhim\nROsWPzZBK+jK7P7CgQ1fgTaSlndt9z0SRmZkHRYUifmDojNhPFo="
