@@ -1,6 +1,6 @@
 # RWeightbot
 
-A simple gem for pulling and parsing the backup data uploaded by Tapbot's [Weightbot][1] app.
+A simple gem for pulling and parsing the backup data uploaded by Tapbot's [Weightbot][1] app. No longer supported.
 
 [1]: http://tapbots.com/software/weightbot/
 
